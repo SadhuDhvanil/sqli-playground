@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container wide-container">
+    <div class="dashboard-header">
+        <h2>Welcome, {{ session.username }}!</h2>
+        <p>Role: {{ session.role }}</p>
+    </div>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ 'success' if category == 'success' else 'error' }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    {% if user %}
+        <div class="card">
+            <h3>Your Account Information</h3>
+            <div class="user-info">
+                <p><strong>ID:</strong> {{ user[0] }}</p>
+                <p><strong>Username:</strong> {{ user[1] }}</p>
+                <p><strong>Email:</strong> {{ user[2] }}</p>
+                <p><strong>Role:</strong> {{ user[4] }}</p>
+                <p><strong>Created:</strong> {{ user[5] }}</p>
+            </div>
+        </div>
+    {% endif %}
+    
+    {% if session.role == 'admin' and all_users %}
+        <div class="card">
+            <h3>All Users (Admin View)</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in all_users %}
+                        <tr>
+                            <td>{{ user[0] }}</td>
+                            <td>{{ user[1] }}</td>
+                            <td>{{ user[2] }}</td>
+                            <td>{{ user[3] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+    
+    <div class="educational-section">
+        <h4>🎓 What You've Learned:</h4>
+        <p>By successfully logging in (either through vulnerability exploitation or legitimate credentials), you've demonstrated:</p>
+        <ul style="text-align: left;">
+            <li>How SQL injection can bypass authentication</li>
+            <li>The importance of parameterized queries</li>
+            <li>How applications handle user sessions</li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        {% if session.role == 'admin' %}
+            <a href="/logs" class="btn btn-secondary">View Injection Logs</a>
+        {% endif %}
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+</div>
+{% endblock %}

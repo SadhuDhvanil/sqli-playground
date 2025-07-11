@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container wide-container">
+    <h2>🔍 SQL Injection Logs</h2>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ 'success' if category == 'success' else 'error' }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    {% if logs %}
+        <div class="educational-section">
+            <h4>📊 Detection Statistics</h4>
+            <p>Total injection attempts logged: {{ logs|length }}</p>
+            <p>Successful injections: {{ logs|selectattr('5', 'equalto', 1)|list|length }}</p>
+            <p>Failed attempts: {{ logs|selectattr('5', 'equalto', 0)|list|length }}</p>
+        </div>
+        
+        {% for log in logs %}
+            <div class="log-entry {% if log[5] %}success{% endif %}">
+                <div class="log-timestamp">
+                    {{ log[6] }} - IP: {{ log[1] }}
+                </div>
+                <div>
+                    <strong>Status:</strong> 
+                    {% if log[5] %}
+                        <span style="color: #dc3545;">✗ Successful Injection</span>
+                    {% else %}
+                        <span style="color: #28a745;">✓ Blocked/Failed</span>
+                    {% endif %}
+                </div>
+                <div class="log-details">
+                    <div><strong>Query:</strong> {{ log[3] }}</div>
+                    <div><strong>Payload:</strong> {{ log[4] }}</div>
+                    <div><strong>User Agent:</strong> {{ log[2] }}</div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="alert alert-warning">
+            No injection attempts logged yet. Try using the vulnerable login page!
+        </div>
+    {% endif %}
+    
+    <div class="educational-section">
+        <h4>🔍 What to Look For:</h4>
+        <ul style="text-align: left;">
+            <li><strong>SQL Keywords:</strong> UNION, SELECT, DROP, INSERT, UPDATE, DELETE</li>
+            <li><strong>Comment Patterns:</strong> -- (double dash), /* */ (C-style comments)</li>
+            <li><strong>Quote Manipulation:</strong> Single quotes, escaped quotes</li>
+            <li><strong>Logic Operators:</strong> OR, AND, XOR</li>
+            <li><strong>Functions:</strong> CONCAT, SUBSTRING, LENGTH, SLEEP</li>
+            <li><strong>Information Schema:</strong> Queries targeting system tables</li>
+        </ul>
+    </div>
+    
+    <div class="educational-section">
+        <h4>🛡️ Detection Techniques:</h4>
+        <ul style="text-align: left;">
+            <li><strong>Pattern Matching:</strong> Regular expressions to detect SQL syntax</li>
+            <li><strong>Anomaly Detection:</strong> Unusual query patterns or lengths</li>
+            <li><strong>Time-based Detection:</strong> Monitoring for unusual delays</li>
+            <li><strong>Error Analysis:</strong> Analyzing database error patterns</li>
+            <li><strong>Behavioral Analysis:</strong> User behavior patterns</li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/dashboard" class="btn">Back to Dashboard</a>
+        <a href="/login" class="btn btn-danger">Test Vulnerable Login</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>🔒 Secure Login</h2>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ 'success' if category == 'success' else 'error' }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+        <form method="POST" class="horizontal-login-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn">Secure Login</button>
+            </div>
+        </form>
+    
+    <div class="educational-section">
+        <h4>🛡️ Security Implementation:</h4>
+        <div class="code-example secure">
+            <strong>Secure Query (Parameterized):</strong><br>
+            query = "SELECT * FROM users WHERE username = ? AND password = ?"<br>
+            cursor.execute(query, (username, password_hash))
+        </div>
+        <p><strong>What's different:</strong> This version uses parameterized queries (prepared statements) where user input is treated as data, not executable code.</p>
+    </div>
+    
+    <div class="educational-section">
+        <h4>🔍 Try the Same Payloads:</h4>
+        <div class="code-example">
+            <strong>Username:</strong> admin' -- <br>
+            <strong>Password:</strong> anything
+        </div>
+        <p>Notice how the same SQL injection payloads that worked on the vulnerable login page don't work here!</p>
+    </div>
+    
+    <div class="educational-section">
+        <h4>📚 Sample Users (same as vulnerable login):</h4>
+        <ul style="text-align: left;">
+            <li><strong>admin</strong> : admin123</li>
+            <li><strong>user1</strong> : password1</li>
+            <li><strong>john_doe</strong> : secret123</li>
+        </ul>
+    </div>
+    
+    <div class="educational-section">
+        <h4>🔧 Prevention Techniques:</h4>
+        <ul style="text-align: left;">
+            <li><strong>Parameterized Queries:</strong> Use placeholders for user input</li>
+            <li><strong>Input Validation:</strong> Validate and sanitize all user inputs</li>
+            <li><strong>Least Privilege:</strong> Use database accounts with minimal permissions</li>
+            <li><strong>Error Handling:</strong> Don't expose database errors to users</li>
+            <li><strong>Stored Procedures:</strong> Use stored procedures when possible</li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 1rem;">
+        <a href="/login" class="btn btn-danger">Compare with Vulnerable Login</a>
+    </div>
+</div>
+{% endblock %}

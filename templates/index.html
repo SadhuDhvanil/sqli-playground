@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container home-container">
+    <h2>Welcome to the SQL Injection Playground</h2>
+    <p>This is an educational platform designed to demonstrate SQL injection vulnerabilities and how to prevent them.</p>
+    
+    <div class="features">
+        <div class="feature">
+            <h3>🔓 Vulnerable Login</h3>
+            <p>Multi-level SQL injection challenges from beginner to advanced</p>
+            <a href="/login" class="btn">Explore Difficulty Levels</a>
+        </div>
+        
+        
+        <div class="feature">
+            <h3>🔒 Secure Login</h3>
+            <p>Learn how parameterized queries prevent SQL injection</p>
+            <a href="/secure-login" class="btn">Try Secure Login</a>
+        </div>
+    </div>
+    
+    <div class="educational-section">
+        <h4>🎓 Educational Purpose</h4>
+        <p>This playground demonstrates SQL injection vulnerabilities across three difficulty levels:</p>
+        <ul style="text-align: left; margin-top: 1rem; color: #e2e8f0;">
+            <li><strong style="color: #10b981;">🟢 Beginner:</strong> Basic authentication bypass techniques</li>
+            <li><strong style="color: #f59e0b;">🟡 Intermediate:</strong> Advanced bypass and data extraction methods</li>
+            <li><strong style="color: #ef4444;">🔴 Advanced:</strong> Complex attacks and evasion techniques</li>
+            <li><strong style="color: #3b82f6;">🔍 Detection:</strong> Real-time monitoring and logging system</li>
+            <li><strong style="color: #8b5cf6;">🛡️ Prevention:</strong> Secure coding with parameterized queries</li>
+        </ul>
+    </div>
+    
+    <div class="alert alert-warning">
+        <strong>Warning:</strong> This application contains intentional vulnerabilities for educational purposes only. Do not use this code in production environments.
+    </div>
+</div>
+{% endblock %}

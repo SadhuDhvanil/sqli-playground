@@ -1,0 +1,327 @@
+2025-07-09 19:16:16,669 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.91:5001
+2025-07-09 19:16:16,669 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 19:16:16,670 - INFO -  * Restarting with stat
+2025-07-09 19:16:16,776 - WARNING -  * Debugger is active!
+2025-07-09 19:16:16,782 - INFO -  * Debugger PIN: 914-427-286
+2025-07-09 19:20:41,866 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.91:5001
+2025-07-09 19:20:41,866 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 19:20:41,866 - INFO -  * Restarting with stat
+2025-07-09 19:20:41,946 - WARNING -  * Debugger is active!
+2025-07-09 19:20:41,949 - INFO -  * Debugger PIN: 914-427-286
+2025-07-09 19:25:54,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-09 19:25:54,849 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 19:26:10,167 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:10] "GET / HTTP/1.1" 200 -
+2025-07-09 19:26:14,888 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:14] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-09 19:26:38,951 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:38] "GET / HTTP/1.1" 200 -
+2025-07-09 19:26:38,954 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:38] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-09 19:26:45,100 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:45] "GET / HTTP/1.1" 200 -
+2025-07-09 19:26:45,127 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:45] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-09 19:26:45,288 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-09 19:26:52,845 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:52] "GET /login HTTP/1.1" 200 -
+2025-07-09 19:26:52,874 - INFO - 127.0.0.1 - - [09/Jul/2025 19:26:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:01,043 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:01] "GET /search HTTP/1.1" 200 -
+2025-07-09 19:27:01,067 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:02,190 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:02] "GET /secure-login HTTP/1.1" 200 -
+2025-07-09 19:27:02,201 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:03,320 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:03] "GET /search HTTP/1.1" 200 -
+2025-07-09 19:27:03,341 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:04,288 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:04] "GET /login HTTP/1.1" 200 -
+2025-07-09 19:27:04,317 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:05,951 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:05] "GET /secure-login HTTP/1.1" 200 -
+2025-07-09 19:27:05,967 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:06,908 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:06] "GET /search HTTP/1.1" 200 -
+2025-07-09 19:27:06,931 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:09,891 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:09] "GET / HTTP/1.1" 200 -
+2025-07-09 19:27:09,923 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:26,421 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:26] "GET /search HTTP/1.1" 200 -
+2025-07-09 19:27:26,450 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:27:38,269 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:38] "GET /login HTTP/1.1" 200 -
+2025-07-09 19:27:38,306 - INFO - 127.0.0.1 - - [09/Jul/2025 19:27:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:28:27,506 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'a8e86429934289bba695101a4adc7baa', Payload=username=' OR '1'='1, password=vdfd, Success=False
+2025-07-09 19:28:27,508 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:27] "POST /login HTTP/1.1" 200 -
+2025-07-09 19:28:27,523 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:28:42,095 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin'--' AND password = '484c687aca38100463a763fc4c53d3a0', Payload=username=admin'--, password=sxs, Success=False
+2025-07-09 19:28:42,098 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin'--' AND password = '484c687aca38100463a763fc4c53d3a0', Payload=username=admin'--, password=sxs, Success=True
+2025-07-09 19:28:42,100 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-09 19:28:42,113 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:42] "GET /dashboard HTTP/1.1" 200 -
+2025-07-09 19:28:42,134 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:28:55,998 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'a8e86429934289bba695101a4adc7baa', Payload=username=' OR '1'='1, password=vdfd, Success=False
+2025-07-09 19:28:56,000 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:56] "POST /login HTTP/1.1" 200 -
+2025-07-09 19:28:56,025 - INFO - 127.0.0.1 - - [09/Jul/2025 19:28:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:29:34,527 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' hey'--' AND password = 'efad7abb323e3d4016284c8a6da076a1', Payload=username=admin' hey'--, password=se, Success=False
+2025-07-09 19:29:34,529 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' hey'--' AND password = 'efad7abb323e3d4016284c8a6da076a1', Payload=username=admin' hey'--, password=se, Success=False
+2025-07-09 19:29:34,530 - INFO - 127.0.0.1 - - [09/Jul/2025 19:29:34] "POST /login HTTP/1.1" 200 -
+2025-07-09 19:29:34,546 - INFO - 127.0.0.1 - - [09/Jul/2025 19:29:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-09 19:29:48,749 - INFO - 127.0.0.1 - - [09/Jul/2025 19:29:48] "GET /secure-login HTTP/1.1" 200 -
+2025-07-09 19:29:48,770 - INFO - 127.0.0.1 - - [09/Jul/2025 19:29:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:47:53,888 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:53] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 16:47:53,911 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:47:56,098 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:56] "GET /search HTTP/1.1" 200 -
+2025-07-10 16:47:56,122 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:47:57,822 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:57] "GET /login HTTP/1.1" 200 -
+2025-07-10 16:47:57,848 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:47:59,105 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:59] "GET / HTTP/1.1" 200 -
+2025-07-10 16:47:59,126 - INFO - 127.0.0.1 - - [10/Jul/2025 16:47:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:48:02,403 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:02] "GET /search HTTP/1.1" 200 -
+2025-07-10 16:48:02,436 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:48:24,183 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:24] "GET /login HTTP/1.1" 200 -
+2025-07-10 16:48:24,214 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:48:30,054 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'laptop' OR 1=1 --' AND password = 'eff7d5dba32b4da32d9a67a519434d3f', Payload=username=laptop' OR 1=1 --, password=df, Success=False
+2025-07-10 16:48:35,234 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:48:35,236 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-10 16:48:35,981 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:48:37,311 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:48:46,368 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:48:46,371 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:46] "POST /login HTTP/1.1" 200 -
+2025-07-10 16:48:47,736 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:48:47,737 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:47] "POST /login HTTP/1.1" 200 -
+2025-07-10 16:48:47,766 - INFO - 127.0.0.1 - - [10/Jul/2025 16:48:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:49:08,188 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:49:18,604 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 16:49:18,606 - INFO - 127.0.0.1 - - [10/Jul/2025 16:49:18] "POST /login HTTP/1.1" 200 -
+2025-07-10 16:49:18,630 - INFO - 127.0.0.1 - - [10/Jul/2025 16:49:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 16:49:18,888 - INFO - 127.0.0.1 - - [10/Jul/2025 16:49:18] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 16:49:18,911 - INFO - 127.0.0.1 - - [10/Jul/2025 16:49:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 17:53:04,011 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:04] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 17:53:04,029 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 17:53:26,023 - ERROR - Secure login error: database is locked
+2025-07-10 17:53:26,025 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:26] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 17:53:29,343 - ERROR - Secure login error: database is locked
+2025-07-10 17:53:29,345 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:29] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 17:53:30,952 - ERROR - Secure login error: database is locked
+2025-07-10 17:53:30,953 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:30] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 17:53:31,139 - ERROR - Secure login error: database is locked
+2025-07-10 17:53:31,142 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:31] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 17:53:31,165 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 17:53:50,608 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:50] "GET /login HTTP/1.1" 200 -
+2025-07-10 17:53:50,630 - INFO - 127.0.0.1 - - [10/Jul/2025 17:53:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 17:59:54,871 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 17:59:56,496 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 18:00:05,257 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 18:00:05,262 - INFO - 127.0.0.1 - - [10/Jul/2025 18:00:05] "POST /login HTTP/1.1" 200 -
+2025-07-10 18:00:06,887 - ERROR - Failed to log injection attempt: database is locked
+2025-07-10 18:00:06,890 - INFO - 127.0.0.1 - - [10/Jul/2025 18:00:06] "POST /login HTTP/1.1" 200 -
+2025-07-10 18:00:06,914 - INFO - 127.0.0.1 - - [10/Jul/2025 18:00:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 18:39:16,404 - INFO - 127.0.0.1 - - [10/Jul/2025 18:39:16] "GET /search HTTP/1.1" 200 -
+2025-07-10 18:39:16,419 - INFO - 127.0.0.1 - - [10/Jul/2025 18:39:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 18:39:23,388 - INFO - 127.0.0.1 - - [10/Jul/2025 18:39:23] "GET /search HTTP/1.1" 200 -
+2025-07-10 18:39:23,400 - INFO - 127.0.0.1 - - [10/Jul/2025 18:39:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 18:45:12,514 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-10 18:45:12,515 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 18:45:35,969 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:35] "GET / HTTP/1.1" 200 -
+2025-07-10 18:45:35,973 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'test' AND password = '098f6bcd4621d373cade4e832627b4f6', Payload=username=test, password=test, Success=False
+2025-07-10 18:45:35,976 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:35] "POST /login HTTP/1.1" 200 -
+2025-07-10 18:45:36,084 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'test' AND password = '098f6bcd4621d373cade4e832627b4f6', Payload=username=test, password=test, Success=False
+2025-07-10 18:45:36,085 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:36] "POST /login HTTP/1.1" 200 -
+2025-07-10 18:45:36,193 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'test' AND password = '098f6bcd4621d373cade4e832627b4f6', Payload=username=test, password=test, Success=False
+2025-07-10 18:45:36,196 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:36] "POST /login HTTP/1.1" 200 -
+2025-07-10 18:45:57,652 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:57] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 18:45:57,673 - INFO - 127.0.0.1 - - [10/Jul/2025 18:45:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:38:13,966 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:13] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 22:38:13,981 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:38:19,730 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:19] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 22:38:19,740 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:38:31,640 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:31] "POST /secure-login HTTP/1.1" 200 -
+2025-07-10 22:38:31,655 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:38:37,135 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:37] "GET /login HTTP/1.1" 200 -
+2025-07-10 22:38:37,147 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:38:44,822 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' OR 1=1 --' AND password = 'ff1ccf57e98c817df1efcd9fe44a8aeb', Payload=username=admin' OR 1=1 --, password=we, Success=False
+2025-07-10 22:38:44,826 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' OR 1=1 --' AND password = 'ff1ccf57e98c817df1efcd9fe44a8aeb', Payload=username=admin' OR 1=1 --, password=we, Success=True
+2025-07-10 22:38:44,828 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-10 22:38:44,843 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:44] "GET /dashboard HTTP/1.1" 200 -
+2025-07-10 22:38:44,875 - INFO - 127.0.0.1 - - [10/Jul/2025 22:38:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:40:40,543 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:40] "GET /search HTTP/1.1" 200 -
+2025-07-10 22:40:40,562 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:40:41,691 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:41] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 22:40:41,716 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:40:43,811 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:43] "GET /search HTTP/1.1" 200 -
+2025-07-10 22:40:43,839 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:40:46,464 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:46] "GET /search HTTP/1.1" 200 -
+2025-07-10 22:40:46,479 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:40:48,475 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:48] "GET /login HTTP/1.1" 200 -
+2025-07-10 22:40:48,506 - INFO - 127.0.0.1 - - [10/Jul/2025 22:40:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:42:24,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-10 22:42:24,223 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 22:42:41,265 - INFO - 127.0.0.1 - - [10/Jul/2025 22:42:41] "GET / HTTP/1.1" 200 -
+2025-07-10 22:42:41,267 - INFO - 127.0.0.1 - - [10/Jul/2025 22:42:41] "[33mGET /search HTTP/1.1[0m" 404 -
+2025-07-10 22:42:41,269 - INFO - 127.0.0.1 - - [10/Jul/2025 22:42:41] "GET /login HTTP/1.1" 200 -
+2025-07-10 22:42:41,271 - INFO - 127.0.0.1 - - [10/Jul/2025 22:42:41] "GET /secure-login HTTP/1.1" 200 -
+2025-07-10 22:43:21,928 - INFO - 127.0.0.1 - - [10/Jul/2025 22:43:21] "GET /login HTTP/1.1" 200 -
+2025-07-10 22:43:21,945 - INFO - 127.0.0.1 - - [10/Jul/2025 22:43:21] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-10 22:43:28,215 - INFO - 127.0.0.1 - - [10/Jul/2025 22:43:28] "GET / HTTP/1.1" 200 -
+2025-07-10 22:43:28,249 - INFO - 127.0.0.1 - - [10/Jul/2025 22:43:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-10 22:52:01,888 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-10 22:52:01,888 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 22:52:17,422 - INFO - 127.0.0.1 - - [10/Jul/2025 22:52:17] "GET / HTTP/1.1" 200 -
+2025-07-10 22:52:17,424 - INFO - 127.0.0.1 - - [10/Jul/2025 22:52:17] "GET /login HTTP/1.1" 200 -
+2025-07-10 22:52:17,426 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' OR 1=1 --' AND password = '098f6bcd4621d373cade4e832627b4f6', Payload=username=admin' OR 1=1 --, password=test, Success=False
+2025-07-10 22:52:17,427 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' OR 1=1 --' AND password = '098f6bcd4621d373cade4e832627b4f6', Payload=username=admin' OR 1=1 --, password=test, Success=True
+2025-07-10 22:52:17,427 - INFO - 127.0.0.1 - - [10/Jul/2025 22:52:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-10 22:52:17,431 - INFO - 127.0.0.1 - - [10/Jul/2025 22:52:17] "GET /dashboard HTTP/1.1" 200 -
+2025-07-10 22:53:01,962 - INFO - 127.0.0.1 - - [10/Jul/2025 22:53:01] "GET / HTTP/1.1" 200 -
+2025-07-10 22:53:01,966 - INFO - 127.0.0.1 - - [10/Jul/2025 22:53:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-10 22:53:01,968 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' --' AND password = 'f0e166dc34d14d6c228ffac576c9a43c', Payload=username=admin' --, password=anything, Success=False
+2025-07-10 22:53:01,969 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' --' AND password = 'f0e166dc34d14d6c228ffac576c9a43c', Payload=username=admin' --, password=anything, Success=True
+2025-07-10 22:53:01,969 - INFO - 127.0.0.1 - - [10/Jul/2025 22:53:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-10 22:53:01,971 - INFO - 127.0.0.1 - - [10/Jul/2025 22:53:01] "GET /dashboard HTTP/1.1" 200 -
+2025-07-11 14:52:20,032 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:20] "GET / HTTP/1.1" 200 -
+2025-07-11 14:52:20,049 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:20] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 14:52:26,148 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:26] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 14:52:26,165 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 14:52:26,970 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:26] "GET /login HTTP/1.1" 200 -
+2025-07-11 14:52:26,991 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 14:52:27,527 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:27] "GET / HTTP/1.1" 200 -
+2025-07-11 14:52:27,541 - INFO - 127.0.0.1 - - [11/Jul/2025 14:52:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 15:03:34,271 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:34] "GET / HTTP/1.1" 200 -
+2025-07-11 15:03:34,287 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 15:03:35,847 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:35] "GET /login HTTP/1.1" 200 -
+2025-07-11 15:03:35,870 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 15:03:48,675 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:48] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 15:03:48,699 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 15:03:53,486 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:53] "GET /login HTTP/1.1" 200 -
+2025-07-11 15:03:53,508 - INFO - 127.0.0.1 - - [11/Jul/2025 15:03:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 15:12:32,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-11 15:12:32,265 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 15:13:22,454 - INFO - 127.0.0.1 - - [11/Jul/2025 15:13:22] "HEAD /login HTTP/1.1" 200 -
+2025-07-11 15:13:40,371 - INFO - 127.0.0.1 - - [11/Jul/2025 15:13:40] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-07-11 15:13:40,373 - INFO - 127.0.0.1 - - [11/Jul/2025 15:13:40] "GET /login HTTP/1.1" 200 -
+2025-07-11 15:13:40,374 - INFO - 127.0.0.1 - - [11/Jul/2025 15:13:40] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 17:26:20,503 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:20] "GET / HTTP/1.1" 200 -
+2025-07-11 17:26:20,516 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:20] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-07-11 17:26:20,516 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:20] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 17:26:22,741 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:22] "GET / HTTP/1.1" 200 -
+2025-07-11 17:26:22,754 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:26:22,754 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:26:26,087 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "GET / HTTP/1.1" 200 -
+2025-07-11 17:26:26,097 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:26:26,098 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:26:26,416 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "GET / HTTP/1.1" 200 -
+2025-07-11 17:26:26,432 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:26:26,433 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:26:27,174 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:27] "GET / HTTP/1.1" 200 -
+2025-07-11 17:26:27,189 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:26:27,190 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:26:29,658 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:29] "GET /login HTTP/1.1" 200 -
+2025-07-11 17:26:29,686 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:26:29,686 - INFO - 127.0.0.1 - - [11/Jul/2025 17:26:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:51:54,866 - INFO - 127.0.0.1 - - [11/Jul/2025 17:51:54] "GET / HTTP/1.1" 200 -
+2025-07-11 17:51:54,896 - INFO - 127.0.0.1 - - [11/Jul/2025 17:51:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 17:51:54,897 - INFO - 127.0.0.1 - - [11/Jul/2025 17:51:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 17:54:11,168 - INFO - 127.0.0.1 - - [11/Jul/2025 17:54:11] "GET / HTTP/1.1" 200 -
+2025-07-11 17:54:11,171 - INFO - 127.0.0.1 - - [11/Jul/2025 17:54:11] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 17:54:58,994 - INFO - 127.0.0.1 - - [11/Jul/2025 17:54:58] "GET / HTTP/1.1" 200 -
+2025-07-11 17:54:59,009 - INFO - 127.0.0.1 - - [11/Jul/2025 17:54:59] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 17:54:59,009 - INFO - 127.0.0.1 - - [11/Jul/2025 17:54:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:06:32,958 - INFO - 127.0.0.1 - - [11/Jul/2025 18:06:32] "GET / HTTP/1.1" 200 -
+2025-07-11 18:06:32,976 - INFO - 127.0.0.1 - - [11/Jul/2025 18:06:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:06:32,976 - INFO - 127.0.0.1 - - [11/Jul/2025 18:06:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:08:49,370 - INFO - 127.0.0.1 - - [11/Jul/2025 18:08:49] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 18:08:49,384 - INFO - 127.0.0.1 - - [11/Jul/2025 18:08:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:08:49,384 - INFO - 127.0.0.1 - - [11/Jul/2025 18:08:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:09:53,655 - INFO - 127.0.0.1 - - [11/Jul/2025 18:09:53] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:09:53,683 - INFO - 127.0.0.1 - - [11/Jul/2025 18:09:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:09:53,686 - INFO - 127.0.0.1 - - [11/Jul/2025 18:09:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:20:30,825 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:30] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 18:20:30,849 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:20:30,849 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:20:32,524 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:32] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:20:32,552 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:20:32,552 - INFO - 127.0.0.1 - - [11/Jul/2025 18:20:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:26:03,861 - INFO - 127.0.0.1 - - [11/Jul/2025 18:26:03] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:26:03,863 - INFO - 127.0.0.1 - - [11/Jul/2025 18:26:03] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:27:10,538 - INFO - 127.0.0.1 - - [11/Jul/2025 18:27:10] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:27:10,555 - INFO - 127.0.0.1 - - [11/Jul/2025 18:27:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:27:10,555 - INFO - 127.0.0.1 - - [11/Jul/2025 18:27:10] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:30:16,720 - INFO - 127.0.0.1 - - [11/Jul/2025 18:30:16] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:30:16,722 - INFO - 127.0.0.1 - - [11/Jul/2025 18:30:16] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:38:14,055 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:14] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:14,073 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:14,073 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:14] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:38:19,113 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:19,127 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:19,128 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:19,674 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:19,683 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:19,683 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:19,894 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:19,908 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:19,908 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:20,115 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:20,130 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:20,130 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:20,328 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:20,339 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:20,339 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:22,443 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:22] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 18:38:22,462 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:22,464 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:23,626 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:23] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:23,652 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:23,657 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:24,261 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:24] "GET / HTTP/1.1" 200 -
+2025-07-11 18:38:24,281 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:24,289 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:38:31,680 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:31] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:38:31,705 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:38:31,707 - INFO - 127.0.0.1 - - [11/Jul/2025 18:38:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:41:09,520 - INFO - 127.0.0.1 - - [11/Jul/2025 18:41:09] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:41:09,522 - INFO - 127.0.0.1 - - [11/Jul/2025 18:41:09] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:50:25,013 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:25] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:50:25,027 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:50:25,027 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:25] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-07-11 18:50:28,047 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:28] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:50:28,063 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:50:28,064 - INFO - 127.0.0.1 - - [11/Jul/2025 18:50:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:53:58,125 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = 'admin' AND password = '0192023a7bbd73250516f069df18b500', Payload=username=admin, password=admin123, Success=False
+2025-07-11 18:53:58,131 - INFO - 127.0.0.1 - - [11/Jul/2025 18:53:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-11 18:53:58,144 - INFO - 127.0.0.1 - - [11/Jul/2025 18:53:58] "GET /dashboard HTTP/1.1" 200 -
+2025-07-11 18:53:58,168 - INFO - 127.0.0.1 - - [11/Jul/2025 18:53:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:53:58,169 - INFO - 127.0.0.1 - - [11/Jul/2025 18:53:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:54:06,733 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:06] "GET /logs HTTP/1.1" 200 -
+2025-07-11 18:54:06,754 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:54:06,754 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:54:19,938 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:19] "GET /login HTTP/1.1" 200 -
+2025-07-11 18:54:19,958 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:54:19,959 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:54:36,569 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = '' OR username IN (SELECT username FROM users WHERE role='admin') --' AND password = '522748524ad010358705b6852b81be4c', Payload=username=' OR username IN (SELECT username FROM users WHERE role='admin') --, password=ds, Success=False
+2025-07-11 18:54:36,572 - WARNING - SQL Injection attempt: IP=127.0.0.1, Query=SELECT * FROM users WHERE username = '' OR username IN (SELECT username FROM users WHERE role='admin') --' AND password = '522748524ad010358705b6852b81be4c', Payload=username=' OR username IN (SELECT username FROM users WHERE role='admin') --, password=ds, Success=True
+2025-07-11 18:54:36,574 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-11 18:54:36,581 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:36] "GET /dashboard HTTP/1.1" 200 -
+2025-07-11 18:54:36,609 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:54:36,611 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:54:42,239 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:42] "GET /logs HTTP/1.1" 200 -
+2025-07-11 18:54:42,259 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 18:54:42,260 - INFO - 127.0.0.1 - - [11/Jul/2025 18:54:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 19:00:38,055 - INFO - 127.0.0.1 - - [11/Jul/2025 19:00:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-11 19:00:38,065 - INFO - 127.0.0.1 - - [11/Jul/2025 19:00:38] "GET / HTTP/1.1" 200 -
+2025-07-11 19:00:38,075 - INFO - 127.0.0.1 - - [11/Jul/2025 19:00:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 19:00:38,076 - INFO - 127.0.0.1 - - [11/Jul/2025 19:00:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 22:39:35,368 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-07-11 22:39:35,368 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 22:39:48,556 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:48] "GET / HTTP/1.1" 200 -
+2025-07-11 22:39:48,573 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 22:39:48,574 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 22:39:52,220 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:52] "GET /login HTTP/1.1" 200 -
+2025-07-11 22:39:52,232 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 22:39:52,233 - INFO - 127.0.0.1 - - [11/Jul/2025 22:39:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 22:40:01,492 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:01] "GET /login HTTP/1.1" 200 -
+2025-07-11 22:40:01,504 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 22:40:01,505 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 22:40:11,968 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:11] "GET /secure-login HTTP/1.1" 200 -
+2025-07-11 22:40:11,997 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 22:40:11,998 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-07-11 22:40:14,385 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:14] "GET /login HTTP/1.1" 200 -
+2025-07-11 22:40:14,402 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-07-11 22:40:14,408 - INFO - 127.0.0.1 - - [11/Jul/2025 22:40:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
