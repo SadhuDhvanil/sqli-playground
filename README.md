@@ -1,3 +1,8 @@
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?logo=render&style=flat-square)](https://sqli-playground.onrender.com)
+
+> ⚠️ **Educational Use Only**  
+> This application is intentionally vulnerable and should only be used for learning or authorized testing environments. Do not deploy it in production.
+
 # SQL Injection Playground
 
 An educational web application demonstrating SQL injection vulnerabilities and detection techniques.
